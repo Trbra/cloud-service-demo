@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Kubernetes lab verification",
+			"type": "shell",
+			"command": "kubectl get nodes && echo '---' && kubectl get deployments && echo '---' && kubectl get pods && echo '---' && curl.exe -I http://localhost:8080",
+			"args": [],
+			"isBackground": false,
+			"problemMatcher": [],
+			"group": "test"
+		}
+	]
+}
